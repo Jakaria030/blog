@@ -1,5 +1,10 @@
 import getPost from "@/lib/getPost";
 
+export const metadata = {
+    title: "Blog | Blog Details",
+    description: "This is blog details page.",
+};
+
 const BlogDetails = async ({ params }) => {
     const {id} = params;
     const blog = await getPost(id);
